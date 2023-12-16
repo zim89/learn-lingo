@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a1ff133-2135-439a-8f98-becb0371e776" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/theme1-hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/auth/callback/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/favorites/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/providers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/teachers/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AuthModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BookLessonModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FilterBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoadingOverlay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoginForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RegisterForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ReviewItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Statistic.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TeacherItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ThemeSwitcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/yupSchemas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/supabase/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/supabase/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/supabase/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/zustand/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/zustand/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/zustand/useStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ZDQO9ixj4niyrgnUtX6L3KPC8N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Volumes/Work/GitHub/projects/learn-lingo/public/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Volumes/Work/GitHub/projects/learn-lingo/node_modules/prettier",
+    "settings.editor.selected.configurable": "configurable.tailwindcss",
+    "ts.external.directory.path": "/Volumes/Work/GitHub/projects/learn-lingo/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/src/app/favorites" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a1ff133-2135-439a-8f98-becb0371e776" name="Changes" comment="" />
+      <created>1701954135560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701954135560</updated>
+      <workItem from="1701954136618" duration="5494000" />
+      <workItem from="1701960893268" duration="2878000" />
+      <workItem from="1701964035364" duration="4601000" />
+      <workItem from="1701970617121" duration="23816000" />
+      <workItem from="1702044539520" duration="26023000" />
+      <workItem from="1702107699843" duration="711000" />
+      <workItem from="1702108597743" duration="37630000" />
+      <workItem from="1702210762966" duration="2468000" />
+      <workItem from="1702219323156" duration="33000000" />
+      <workItem from="1702295517079" duration="1839000" />
+      <workItem from="1702297529065" duration="7809000" />
+      <workItem from="1702305932888" duration="6215000" />
+      <workItem from="1702380006003" duration="14000" />
+      <workItem from="1702381538482" duration="280000" />
+      <workItem from="1702481192894" duration="17289000" />
+      <workItem from="1702567948074" duration="3792000" />
+      <workItem from="1702574437696" duration="39758000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

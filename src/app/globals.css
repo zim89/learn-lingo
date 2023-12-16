@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body[data-theme='theme1'] {
+    --color-secondary: #f4c550;
+    --color-secondary-hover: #ffdc86;
+    --bg-image: url('/images/theme1-hero.png')
+      /*--color-secondary-light: #fbe9ba;*/;
+  }
+
+  body[data-theme='theme2'] {
+    --color-secondary: #9fbaae;
+    --color-secondary-hover: #cbded3;
+    --bg-image: url('/images/theme2-hero.png');
+  }
+
+  body[data-theme='theme3'] {
+    --color-secondary: #9fb7ce;
+    --color-secondary-hover: #bfd6ea;
+    --bg-image: url('/images/theme3-hero.png');
+  }
+
+  body[data-theme='theme4'] {
+    --color-secondary: #e0a39a;
+    --color-secondary-hover: #f2c0bd;
+    --bg-image: url('/images/theme4-hero.png');
+  }
+
+  body[data-theme='theme5'] {
+    --color-secondary: #f0aa8d;
+    --color-secondary-hover: #f4c8ba;
+    --bg-image: url('/images/theme5-hero.png');
+  }
+
+  body {
+    @apply bg-white font-roboto text-primary;
+  }
+}
+
+@layer components {
+  .radio-label span {
+    @apply group-data-[selected=true]:!border-red-600;
+  }
+}
