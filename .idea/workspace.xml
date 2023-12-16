@@ -70,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Volumes/Work/GitHub/projects/learn-lingo/public/images",
+    "last_opened_file_path": "/Volumes/Work/GitHub/projects/learn-lingo/src/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -95,6 +95,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/src/app/favorites" />
     </key>
@@ -129,7 +130,7 @@
       <workItem from="1702381538482" duration="280000" />
       <workItem from="1702481192894" duration="17289000" />
       <workItem from="1702567948074" duration="3792000" />
-      <workItem from="1702574437696" duration="39758000" />
+      <workItem from="1702574437696" duration="40723000" />
     </task>
     <servers />
   </component>
