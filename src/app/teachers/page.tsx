@@ -50,7 +50,7 @@ export default function Teachers() {
       query = query.contains('levels', [filter.level]);
     }
     if (filter?.price) {
-      query = query.eq('price_per_hour', filter.price);
+      query = query.lte('price_per_hour', filter.price);
     }
 
     const { data, count } = await query;
