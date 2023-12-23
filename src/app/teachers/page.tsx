@@ -44,20 +44,16 @@ export default function Teachers() {
       .range((page - 1) * limit, page * limit - 1);
 
     if (filter?.language) {
-      console.log(filter.language);
       query = query.contains('languages', [filter.language]);
     }
     if (filter?.level) {
-      console.log(filter.level);
       query = query.contains('levels', [filter.level]);
     }
     if (filter?.price) {
-      console.log(filter?.price);
       query = query.eq('price_per_hour', filter.price);
     }
 
     const { data, count } = await query;
-    console.log(data);
     if (count) total.current = count;
     if (data) setTeachers([...teachers, ...data]);
   }, [
@@ -102,9 +98,14 @@ export default function Teachers() {
                 <TeacherItem teacher={teacher} />
               </li>
             ))}
+          {teachers.length === 0 && filter && !firstRender.current && (
+            <li className='pt-10 text-center text-2xl font-bold text-primary'>
+              Nothing was found for your request
+            </li>
+          )}
         </ul>
 
-        {teachers.length < total.current && (
+        {teachers.length > 0 && teachers.length < total.current && (
           <button
             className='mx-auto block rounded-xl bg-secondary px-12 py-4 text-lg font-bold leading-7 transition-colors hover:bg-secondary-hover'
             onClick={handleLoadMore}

@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${roboto.variable}`} data-theme='theme1'>
         <Providers>
           <Header />
-          <main>{children}</main>
+          <main className='pb-8'>{children}</main>
         </Providers>
 
         <ToastContainer

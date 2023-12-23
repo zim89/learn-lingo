@@ -50,6 +50,7 @@ next-env.d.ts
  .idea/**/aws.xml
 
  # Generated files
+ .idea/*
  .idea/**/contentModel.xml
 
  # Sensitive or high-churn files
@@ -147,3 +148,4 @@ next-env.d.ts
  # Azure Toolkit for IntelliJ plugin
  # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
  .idea/**/azureSettings.xml
+*.xml

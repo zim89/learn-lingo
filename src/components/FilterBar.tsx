@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Listbox } from '@headlessui/react';
 import { languages, levels, prices } from '@/lib/data';
 import { ChevronDown } from 'lucide-react';
@@ -13,6 +13,10 @@ export default function FilterBar() {
   const [level, setLevel] = useState('');
   const [price, setPrice] = useState('');
   const filterStore = useStore(useFilterStore, (state) => state);
+
+  useEffect(() => {
+    filterStore?.clearFilter();
+  }, []);
 
   const onReset = () => {
     setLanguage('');
@@ -52,7 +56,7 @@ export default function FilterBar() {
                 />
               </span>
             </Listbox.Button>
-            <Listbox.Options className='absolute z-10 mt-2 flex w-full flex-col gap-2 rounded-lg bg-white py-[14px] pl-[18px]'>
+            <Listbox.Options className='absolute z-10 mt-2 flex w-full flex-col gap-2 rounded-lg border border-gray-300 bg-white py-[14px] pl-[18px] shadow-xl'>
               {languages.map((item) => (
                 <Listbox.Option
                   key={item.label}
@@ -93,7 +97,7 @@ export default function FilterBar() {
                 />
               </span>
             </Listbox.Button>
-            <Listbox.Options className='absolute z-10 mt-2 flex w-full flex-col gap-2 rounded-lg bg-white px-[18px] py-[14px]'>
+            <Listbox.Options className='absolute z-10 mt-2 flex w-full flex-col gap-2 rounded-lg border border-gray-300 bg-white px-[18px] py-[14px] shadow-xl'>
               {levels.map((item) => (
                 <Listbox.Option
                   key={item.label}
@@ -132,7 +136,7 @@ export default function FilterBar() {
                 />
               </span>
             </Listbox.Button>
-            <Listbox.Options className='absolute z-10 mt-2 flex w-full flex-col gap-2 rounded-lg bg-white py-[14px] pl-[18px]'>
+            <Listbox.Options className='absolute z-10 mt-2 flex w-full flex-col gap-2 rounded-lg border border-gray-300 bg-white py-[14px] pl-[18px] shadow-xl'>
               {prices.map((item) => (
                 <Listbox.Option
                   key={item.label}

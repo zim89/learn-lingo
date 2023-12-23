@@ -1,8 +1,8 @@
 'use client';
-import FilterBar from '@/components/FilterBar';
 import { useFavoritesStore } from '@/utils/zustand';
 import useStore from '@/utils/zustand/useStore';
 import TeacherItem from '@/components/TeacherItem';
+import React from 'react';
 
 export default function Favorites() {
   const favorites =
@@ -18,6 +18,11 @@ export default function Favorites() {
                 <TeacherItem teacher={teacher} />
               </li>
             ))}
+          {favorites.length === 0 && (
+            <li className='pt-10 text-center text-2xl font-bold text-primary'>
+              Your collection is empty
+            </li>
+          )}
         </ul>
       </div>
     </section>

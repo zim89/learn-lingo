@@ -36,13 +36,12 @@ export function ThemeSwitcher() {
               {({ active }) => (
                 <button
                   className={clsx(
-                    'flex items-center gap-2 rounded-md px-3 py-1',
+                    'flex items-center gap-2 rounded-md px-1 py-1',
                     active && 'bg-gray-100'
                   )}
                   onClick={() => onChangeTheme('theme1')}
                 >
-                  <span className='block h-4 w-4 rounded-full bg-[#F4C550]'></span>
-                  theme1
+                  <span className='block h-6 w-6 rounded-full bg-[#F4C550]'></span>
                 </button>
               )}
             </Menu.Item>
@@ -50,13 +49,12 @@ export function ThemeSwitcher() {
               {({ active }) => (
                 <button
                   className={clsx(
-                    'flex items-center gap-2 rounded-md px-3 py-1',
+                    'flex items-center gap-2 rounded-md px-1 py-1',
                     active && 'bg-gray-100'
                   )}
                   onClick={() => onChangeTheme('theme2')}
                 >
-                  <span className='block h-4 w-4 rounded-full bg-[#9FBAAE]'></span>
-                  theme2
+                  <span className='block h-6 w-6 rounded-full bg-[#9FBAAE]'></span>
                 </button>
               )}
             </Menu.Item>
@@ -64,13 +62,12 @@ export function ThemeSwitcher() {
               {({ active }) => (
                 <button
                   className={clsx(
-                    'flex items-center gap-2 rounded-md px-3 py-1',
+                    'flex items-center gap-2 rounded-md px-1 py-1',
                     active && 'bg-gray-100'
                   )}
                   onClick={() => onChangeTheme('theme3')}
                 >
-                  <span className='block h-4 w-4 rounded-full bg-[#9FB7CE]'></span>
-                  theme3
+                  <span className='block h-6 w-6 rounded-full bg-[#9FB7CE]'></span>
                 </button>
               )}
             </Menu.Item>
@@ -78,13 +75,12 @@ export function ThemeSwitcher() {
               {({ active }) => (
                 <button
                   className={clsx(
-                    'flex items-center gap-2 rounded-md px-3 py-1',
+                    'flex items-center gap-2 rounded-md px-1 py-1',
                     active && 'bg-gray-100'
                   )}
                   onClick={() => onChangeTheme('theme4')}
                 >
-                  <span className='block h-4 w-4 rounded-full bg-[#E0A39A]'></span>
-                  theme4
+                  <span className='block h-6 w-6 rounded-full bg-[#E0A39A]'></span>
                 </button>
               )}
             </Menu.Item>
@@ -92,13 +88,12 @@ export function ThemeSwitcher() {
               {({ active }) => (
                 <button
                   className={clsx(
-                    'flex items-center gap-2 rounded-md px-3 py-1',
+                    'flex items-center gap-2 rounded-md px-1 py-1',
                     active && 'bg-gray-100'
                   )}
                   onClick={() => onChangeTheme('theme5')}
                 >
-                  <span className='block h-4 w-4 rounded-full bg-[#F0AA8D]'></span>
-                  theme5
+                  <span className='block h-6 w-6 rounded-full bg-[#F0AA8D]'></span>
                 </button>
               )}
             </Menu.Item>
