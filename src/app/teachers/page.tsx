@@ -31,60 +31,74 @@ export interface Teacher {
 export default function Teachers() {
   const supabase = createClient();
   const filter = useStore(useFilterStore, (state) => state.filter);
-  const [page, setPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
   const [limit] = useState(4);
   const [teachers, setTeachers] = useState<Teacher[]>([]);
+
   const total = useRef(0);
   const firstRender = useRef(true);
 
-  const fetchTeachers = useCallback(async () => {
-    let query = supabase
-      .from('teachers')
-      .select('*', { count: 'exact' })
-      .range((page - 1) * limit, page * limit - 1);
+  const fetchTeachers = useCallback(
+    async (page = currentPage) => {
+      let query = supabase
+        .from('teachers')
+        .select('*', { count: 'exact' })
+        .range((page - 1) * limit, page * limit - 1);
 
-    if (filter?.language) {
-      query = query.contains('languages', [filter.language]);
-    }
-    if (filter?.level) {
-      query = query.contains('levels', [filter.level]);
-    }
-    if (filter?.price) {
-      query = query.lte('price_per_hour', filter.price);
-    }
+      if (filter?.language) {
+        query = query.contains('languages', [filter.language]);
+      }
+      if (filter?.level) {
+        query = query.contains('levels', [filter.level]);
+      }
+      if (filter?.price) {
+        query = query.lte('price_per_hour', filter.price);
+      }
 
-    const { data, count } = await query;
-    if (count) total.current = count;
-    if (data) setTeachers([...teachers, ...data]);
-  }, [
-    filter?.language,
-    filter?.level,
-    filter?.price,
-    limit,
-    page,
-    supabase,
-    teachers,
-  ]);
+      const { data, count } = await query;
+      return { data, count };
+    },
+    [
+      filter?.language,
+      filter?.level,
+      filter?.price,
+      limit,
+      currentPage,
+      supabase,
+    ]
+  );
 
   useEffect(() => {
     (async () => {
       if (firstRender.current) {
-        await fetchTeachers();
+        const { data, count } = await fetchTeachers();
         firstRender.current = false;
-        setPage(2);
+        setCurrentPage(2);
+        if (data) setTeachers([...data]);
+        if (count) total.current = count;
       }
     })();
-  }, [fetchTeachers]);
+  }, []);
 
   useEffect(() => {
-    firstRender.current = true;
-    setTeachers([]);
-    setPage(1);
+    (async () => {
+      if (
+        !firstRender.current &&
+        (filter?.language || filter?.level || filter?.price)
+      ) {
+        const { data, count } = await fetchTeachers(1);
+        setCurrentPage(2);
+        if (data) setTeachers([...data]);
+        if (count) total.current = count;
+      }
+    })();
   }, [filter]);
 
   const handleLoadMore = async () => {
-    await fetchTeachers();
-    setPage((prev) => prev + 1);
+    const { data, count } = await fetchTeachers();
+    setCurrentPage((prev) => prev + 1);
+    if (data) setTeachers([...teachers, ...data]);
+    if (count) total.current = count;
   };
 
   return (
